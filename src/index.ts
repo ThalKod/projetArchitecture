@@ -27,10 +27,18 @@ app.get("/api/v1/sysinfo", async (req, res)  => {
     systemInfo.diskLayout = await si.diskLayout();
     systemInfo.networkInterfaces = await si.networkInterfaces();
 
-    res.send(systemInfo);
-})
+    res.status(200).send(systemInfo);
+});
 
-app.listen(3000, () => console.log("listening on port 3000..."))
+app.get("/*", (req, res) => {
+    res.status(404).send({Error: "404"});
+});
+
+app.listen(3000, () => console.log("listening on port 3000..."));
+
+
+export default app;
+
 
 
 

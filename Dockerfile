@@ -27,10 +27,10 @@ USER node
 CMD ["npm", "start"]
 
 FROM alpine:3.15 as runner
+RUN addgroup -S node && adduser -S node -G node
 
 # installing nodejs and npm for the container
 RUN apk add --update nodejs
-RUN apk add --update npm
 
 # Using this directory as working directory
 WORKDIR cloudApp/
@@ -43,5 +43,7 @@ COPY --from=builder --chown=node:node cloudApp/package.json ./
 # Ouvrir le port 8000
 EXPOSE 8000
 
+USER node
+
 # Execution
-CMD ["npm", "start"]
+CMD ["node", "./dist/index.js"]

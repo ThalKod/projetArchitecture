@@ -15,4 +15,6 @@ describe('typeScript test suite', () => {
         .get('/api/v1/sysinfo')
     expect(res.statusCode).toBe(200)
   });
+
+  //TODO: Add more test for struct de donnes, faire test serveur se lance....
 });

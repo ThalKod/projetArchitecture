@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b11e3d8d-5ef5-4def-a614-b0bc31fa451f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions-demo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/github-actions-demo.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <workItem from="1668499136295" duration="6230000" />
       <workItem from="1669101934203" duration="415000" />
       <workItem from="1669103020889" duration="9263000" />
-      <workItem from="1669706247243" duration="1313000" />
+      <workItem from="1669706247243" duration="2219000" />
     </task>
     <servers />
   </component>

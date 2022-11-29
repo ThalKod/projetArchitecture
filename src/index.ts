@@ -34,10 +34,9 @@ app.get("/*", (req, res) => {
     res.status(404).send({Error: "404"});
 });
 
-app.listen(8080, () => console.log("listening on port 8000..."));
+const server = app.listen(8080, () => console.log("listening on port 8000..."));
 
-
-export default app;
+export default server;
 
 
 
